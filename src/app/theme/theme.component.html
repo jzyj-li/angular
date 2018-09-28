@@ -1,0 +1,24 @@
+<div class="theme">
+  <div class="collection-info">
+    <img src="" alt="" class="avatar" src="{{info?.img}}">
+    <div class="summary">
+      <div class="name">{{info?.name}}</div>
+      <div class="desc" innerHTML="{{info?.desc}}"></div>
+      <div class="intro" innerHTML="{{info?.info}}"></div>
+      <button class="follow-btn" (click)="follow()">
+        关注
+      </button>
+    </div>
+  </div>
+  <div class="tab">
+    <div class="item" *ngFor="let item of tab;let i = index" [class.active]="i == currentTabIndex" (click)="clickTab(i)">
+      {{item}}
+    </div>
+  </div>
+  <div class="tab-content">
+    <app-list [list]="list" (onLoadMore)="onLoadMore($event)"></app-list>
+  </div>
+</div>
+
+
+

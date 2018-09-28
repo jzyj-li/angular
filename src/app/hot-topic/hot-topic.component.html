@@ -1,0 +1,11 @@
+<div class="hot-topic">
+  <div class="hot-title">
+    <span>热门专题</span>
+    <span (click)="changeHot()">换一批</span>
+  </div>
+  <div class="hot-clumn">
+    <a routerLink="/theme/{{item.slug}}" *ngFor="let item of hotClumn">
+      {{item.title}}
+    </a>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="list-wrap">
+  <hr>
+  <div class="list">
+    <div class="item" *ngFor="let item of list">
+      <div class="author">
+        <a href="" class="avatar">
+          <img src="{{item.object.data.user.avatar}}" alt="">
+        </a>
+        <a href="" class="name">{{item.object.data.user.nickname}}</a>
+      </div>
+      <a routerLink="/article/{{item.object.data.slug}}" class="content" [class.have-img]="item.object.data.list_image_url">
+        <app-img [src]="item.object.data.list_image_url | imgSrc"  *ngIf="item.object.data.list_image_url" class="wrap-img" [scrollTop]='scrollTop'></app-img>
+        <div class="summary">
+          <h6 class="title">{{item.object.data.title}}</h6>
+          <p class="abstract">{{item.object.data.public_abbr}}</p>
+        </div>
+      </a>
+      <div class="meta">
+        <a href="" *ngIf="item.object.data.important_collection"class="tag">{{item.object.data.important_collection?.title}}</a>
+        <span *ngIf="item.object.data.public_comments_count">
+          <i class="icon-pingluncomment43-copy iconfont"></i>
+          {{item.object.data.public_comments_count}}
+      </span>
+        <span *ngIf="item.object.data.likes_count">
+        <i class=" iconfont icon-xihuan"></i>
+        {{item.object.data.likes_count}}
+      </span>
+        <span *ngIf="item.object.data.total_rewards_count">
+        <i class="icon-dashang iconfont"></i>
+        {{item.object.data.total_rewards_count}}
+      </span>
+      </div>
+    </div>
+  </div>
+
+  <!--加载更多-->
+  <div class="load-more" (click)="loadMore($event)">
+    展开更多文章
+  </div>
+  <hr>
+</div>

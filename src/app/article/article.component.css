@@ -1,0 +1,93 @@
+.article{
+  padding: 0 18px;
+}
+.article .title {
+  margin: 15px 0;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+  line-height: 1.4;
+  color: #2f2f2f;
+}
+.article .article-info{
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: #b1b1b1;
+}
+.article .avatar{
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  vertical-align: middle;
+}
+.article .name{
+  margin: 0 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #484848;
+  display: inline-block;
+  vertical-align: middle;
+}
+.article .label{
+  padding: 1px 2px;
+  font-size: 12px;
+  color: #ea6f5a;
+  border-radius: 3px;
+  vertical-align: middle;
+  position: relative;
+}
+.article .meta{
+  margin-top: 10px;
+}
+.article .meta span {
+  margin-right: 10px;
+}
+.article .app-open{
+  margin: 0;
+  color: #b1b1b1!important;
+  background:none
+}
+.article .content{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #2f2f2f;
+}
+.article .image-package{
+  margin: 0 -18px 25px;
+  text-align: center;
+}
+.article .image-container{
+  position: relative;
+}
+.article .image-package img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+.article .image-view{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.article .image-caption{
+  min-width: 20%;
+  max-width: 80%;
+  min-height: 22px;
+  display: inline-block;
+  padding: 10px 10px 6px;
+  margin: 0 auto;
+  border-bottom: 1px solid;
+  color: #969696;
+  font-size: 14px;
+  line-height: 1.7;
+  border-color: #d9d9d9;
+}

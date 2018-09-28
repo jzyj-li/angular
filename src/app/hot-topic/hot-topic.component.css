@@ -1,0 +1,26 @@
+.hot-title{
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #545454;
+}
+.hot-title span:last-child {
+  float: right;
+  color: #888;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.hot-clumn {
+  padding: 0 18px;
+  padding-bottom: 5px;
+}
+.hot-clumn a {
+  display: inline-block;
+  padding: 2px 10px;
+  margin: 0 12px 12px 0;
+  font-size: 14px;
+  position: relative;
+  color: #ea6f5a;
+  border: 1px solid #ea6f5a;
+}
